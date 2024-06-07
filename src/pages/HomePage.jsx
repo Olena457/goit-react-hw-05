@@ -1,6 +1,6 @@
 import { Blocks } from 'react-loader-spinner';
 import { useEffect, useState } from 'react';
-import { fetchTrendMovies } from '../apiService/movies';
+import { fetchTrendingMovies } from '../apiService/movies';
 import MovieList from '../components/MovieList/MovieList';
 
 function HomePage() {
@@ -8,7 +8,7 @@ function HomePage() {
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const moviesData = await fetchTrendMovies();
+      const moviesData = await fetchTrendingMovies();
 
       setMovies(moviesData);
     };
