@@ -7,7 +7,13 @@ function HomePage() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetchTrendMovies().then(setMovies);
+    const fetchMovies = async () => {
+      const moviesData = await fetchTrendMovies();
+
+      setMovies(moviesData);
+    };
+
+    fetchMovies();
   }, []);
 
   return (
@@ -18,13 +24,13 @@ function HomePage() {
           width="70"
           color="#00ffff"
           ariaLabel="blocks-loading"
-          wrapperStyle={null}
+          wrapperStyle={{}}
           wrapperClass="blocks-wrapper"
           visible={true}
         />
       ) : (
         <div className="container">
-          <h1>Trending movies today</h1>
+          <h2>Trending today</h2>
           <MovieList movies={movies} />
         </div>
       )}

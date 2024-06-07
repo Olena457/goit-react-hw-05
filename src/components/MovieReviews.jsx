@@ -32,7 +32,7 @@ function MovieReviews() {
           width="70"
           color="#00ffff"
           ariaLabel="blocks-loading"
-          wrapperStyle={null}
+          wrapperStyle={{}}
           wrapperClass="blocks-wrapper"
           visible={true}
         />

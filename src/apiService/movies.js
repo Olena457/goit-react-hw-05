@@ -4,7 +4,7 @@ const TOKEN_AUTHOR =
 axios.defaults.baseURL = 'https://api.themoviedb.org/';
 axios.defaults.headers.common['Authorization'] = TOKEN_AUTHOR;
 
-export const fetchTrendingMovies = async () => {
+export const fetchTrendMovies = async () => {
   const { data } = await axios.get('3/trending/movie/day', {
     params: {
       language: 'en-US',
