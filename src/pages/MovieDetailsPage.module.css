@@ -1,0 +1,33 @@
+.but {
+  font-size: inherit;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.WrapperImg {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.wrapperContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.listJenres {
+  display: flex;
+  gap: 8px;
+}
+
+.listInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #474f52;
+  text-decoration: underline;
+  margin-top: 8px;
+}

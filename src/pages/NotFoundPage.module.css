@@ -1,0 +1,13 @@
+.wrapperNotFound {
+  font-size: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spanNotFoundound {
+  display: block;
+  margin: 0 auto;
+  font-size: large;
+  color: #ff0000c0;
+}

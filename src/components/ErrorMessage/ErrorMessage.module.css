@@ -1,0 +1,6 @@
+.error {
+  color: #ff0000c0;
+  display: 'flex';
+  justify-content: center;
+  margin-top: 24px;
+}

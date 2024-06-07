@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.input {
+  border: 1px solid #474f52;
+  border-radius: 4px;
+  padding-left: 8px;
+  outline: none;
+  background-color: #fff;
+}
+.toast {
+  font-size: large;
+  color: #ff0000c0;
+}
+
+.btn {
+  font-size: inherit;
+  color: #474f52;
+  background-color: #08ffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+}
+.btn:hover {
+  border-color: 1px solid #000;
+  transition: 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98);
+}
+
+.list {
+  color: #008080;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: underline;
+  margin-top: 12px;
+}

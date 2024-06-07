@@ -1,0 +1,17 @@
+.nav {
+  background-color: #008080;
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  border-bottom: 2px solid #474f52;
+  margin-bottom: 8px;
+  box-shadow: 0px 4px 10px 4px rgba(145, 136, 136, 0.23);
+}
+
+.link {
+  color: #00ced1;
+}
+
+.link.active {
+  color: #ff0000c0;
+}
