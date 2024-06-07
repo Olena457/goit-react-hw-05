@@ -1,5 +1,6 @@
 import axios from 'axios';
-const TOKEN_AUTHOR = ' ';
+const TOKEN_AUTHOR =
+  'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0OGI5ZWRmYmJlODQyNWI2Y2QxZjQzZjRjZmVkYmEzNSIsInN1YiI6IjY2NjIxNjRjNDk0YTFhY2U0MzdlN2JkYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._WGkEN3yWb0C08gYU9ihxRacM8Eg9VYRhbEfzjF94wg ';
 axios.defaults.baseURL = 'https://api.themoviedb.org/';
 axios.defaults.headers.common['Authorization'] = TOKEN_AUTHOR;
 
