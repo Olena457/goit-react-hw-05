@@ -8,7 +8,7 @@ import {
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { Blocks } from 'react-loader-spinner';
 import { fetchMoviesById } from '../apiService/movies';
-import css from './MovieDetailsPage.module.css';
+import css from '../pages/MovieDetailsPage.module.css';
 
 function MovieDetailsPage() {
   const [movie, setMovie] = useState(null);
@@ -41,11 +41,11 @@ function MovieDetailsPage() {
     <>
       {!movie ? (
         <Blocks
-          height="70"
-          width="70"
-          color="#00ffff"
+          height="80"
+          width="80"
+          color="#4fa94d"
           ariaLabel="blocks-loading"
-          wrapperStyle={null}
+          wrapperStyle={{}}
           wrapperClass="blocks-wrapper"
           visible={true}
         />

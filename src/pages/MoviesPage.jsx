@@ -70,9 +70,9 @@ function MoviesPage() {
         </form>
         {isLoading && (
           <Blocks
-            height="70"
-            width="70"
-            color="#00ffff"
+            height="80"
+            width="80"
+            color="#4fa94d"
             ariaLabel="blocks-loading"
             wrapperStyle={{}}
             wrapperClass="blocks-wrapper"

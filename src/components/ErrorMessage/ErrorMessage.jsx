@@ -1,8 +1,11 @@
-import css from './ErrorMessage.module.css';
 function ErrorMessage() {
   return (
     <>
-      <p className={css.error}> Oops something is wrong... Please try again!</p>
+      <p
+        style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}
+      >
+        Oops something is wrong... Please try again!
+      </p>
     </>
   );
 }

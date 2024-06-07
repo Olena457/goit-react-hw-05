@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchCreditsById } from '../apiService/movies';
 import { Blocks } from 'react-loader-spinner';
-import css from '/MovieCast.module.css';
+import css from './MovieCast.module.css';
 
 function MovieCast() {
   const [cast, setCast] = useState(null);
@@ -23,9 +23,9 @@ function MovieCast() {
     <>
       {!cast ? (
         <Blocks
-          height="70"
-          width="70"
-          color="#00ffff"
+          height="80"
+          width="80"
+          color="#4fa94d"
           ariaLabel="blocks-loading"
           wrapperStyle={{}}
           wrapperClass="blocks-wrapper"
