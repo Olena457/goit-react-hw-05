@@ -2,9 +2,9 @@ import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { Blocks } from 'react-loader-spinner';
 
-const Navigation = lazy(() => import('./components/Navigation/Navigation'));
+import Navigation from './components/Navigation/Navigation';
 const MovieCast = lazy(() => import('./components/MovieCast'));
-const MovieReviews = lazy(() => import('/components/MovieReviews'));
+const MovieReviews = lazy(() => import('./components/MovieReviews'));
 const HomePage = lazy(() => import('./pages/HomePage'));
 const MovieDetailsPage = lazy(() => import('./pages/MovieDetailsPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));

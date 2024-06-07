@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { fetchMoviesByQuery } from '../apiService/movies';
 import { Blocks } from 'react-loader-spinner';
 import toast, { Toaster } from 'react-hot-toast';
-import MovieList from './components/MovieList/MovieList';
+import MovieList from '../components/MovieList/MovieList';
 import ErrorMessage from '../components/ErrorMessage/ErrorMessage';
 import css from './MoviesPage.module.css';
 
