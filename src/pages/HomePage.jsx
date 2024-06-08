@@ -22,7 +22,7 @@ function HomePage() {
         <Blocks
           height="80"
           width="80"
-          color="#4fa94d"
+          color="#ff0000c0"
           ariaLabel="blocks-loading"
           wrapperStyle={{}}
           wrapperClass="blocks-wrapper"

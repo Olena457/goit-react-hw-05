@@ -74,13 +74,15 @@ function MovieDetailsPage() {
               <h3>Genres</h3>
               <ul className={css.listJenres}>
                 {movie.genres.map(genre => (
-                  <li key={genre.id}>{genre.name}</li>
+                  <li className={css.genre} key={genre.id}>
+                    {genre.name}
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
 
-          <p>More informations</p>
+          <p className={css.more}>More informations</p>
           <ul className={css.listInfo}>
             <Link to={`/movies/${movieId}/cast`} state={locationRef.current}>
               Cast
@@ -94,7 +96,7 @@ function MovieDetailsPage() {
               <Blocks
                 height="70"
                 width="70"
-                color="#00ffff"
+                color="#ff0000c0"
                 ariaLabel="blocks-loading"
                 wrapperStyle={{}}
                 wrapperClass="blocks-wrapper"

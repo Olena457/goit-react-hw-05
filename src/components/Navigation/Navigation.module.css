@@ -1,17 +1,23 @@
 .nav {
-  background-color: #008080;
+  background-image: linear-gradient(to left, pink, orange);
   display: flex;
+  position: 'relative';
+  z-index: 1;
+  width: 100%;
   gap: 8px;
   padding: 16px;
   border-bottom: 2px solid #474f52;
-  margin-bottom: 8px;
-  box-shadow: 0px 4px 10px 4px rgba(145, 136, 136, 0.23);
+  margin: 0px 0px 40px 0px;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .link {
-  color: #00ced1;
+  color: black;
 }
 
 .link.active {
   color: #ff0000c0;
+}
+.title {
+  margin: 0 auto;
 }

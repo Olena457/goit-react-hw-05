@@ -15,6 +15,7 @@ function Navigation() {
       <NavLink className={buildLinkClass} to="/movies">
         Movies
       </NavLink>
+      <h1 className={css.title}>Relax and enjoy watching amazing movies</h1>
     </nav>
   );
 }

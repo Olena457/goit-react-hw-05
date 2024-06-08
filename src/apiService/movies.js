@@ -1,9 +1,9 @@
 import axios from 'axios';
 const TOKEN_AUTHOR =
-  'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNGEwZmZlMzA5NTRmZjQ4ZDljNDRhMDk2YWRmNjU0YiIsInN1YiI6IjY2NjIxNjRjNDk0YTFhY2U0MzdlN2JkYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lMxP3Mh-z8B2UUV3ndtvQmBSFdBImOb4RiSvRRER3N0';
+  'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzOTU2ZDgxOGNhM2ViMzFiOWRmYzRkMjAzZjQxMWE4YyIsInN1YiI6IjY2NjIxNjRjNDk0YTFhY2U0MzdlN2JkYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xlq4cUAvMPr2tMTRr04egKqtqkUfgGiDdZfihSLLESg';
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/';
-axios.defaults.headers.common['Authorization'] = TOKEN_AUTHOR;
+axios.defaults.headers.common['Authorization'] = `Bearer ${TOKEN_AUTHOR}`;
 
 export const fetchTrendingMovies = async () => {
   const { data } = await axios.get('3/trending/movie/day', {
@@ -11,6 +11,7 @@ export const fetchTrendingMovies = async () => {
       language: 'en-US',
     },
   });
+  console.log(data.results);
   return data.results;
 };
 

@@ -1,9 +1,23 @@
 .but {
+  position: absolute;
+  bottom: 50px;
+  color: #000;
+  background-color: darkorange;
+  right: 0;
+  margin-right: 150px;
   font-size: inherit;
-  border: 1px solid #000;
+
   border-radius: 4px;
   margin-bottom: 8px;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.but:hover,
+.but:active {
+  outline: none;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+  border: 1px solid #000;
 }
 
 .WrapperImg {
@@ -22,12 +36,15 @@
   display: flex;
   gap: 8px;
 }
-
+.more {
+  margin: 0 auto;
+}
 .listInfo {
   display: flex;
   flex-direction: column;
   gap: 8px;
   color: #474f52;
+  margin: 0 auto;
   text-decoration: underline;
   margin-top: 8px;
 }
